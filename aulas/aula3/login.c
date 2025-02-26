@@ -2,15 +2,16 @@
 
 int main() {
 
-  int cpf, senha;
+  int senha;
+  char cpf[12];
 
   printf("Digite seu CPF: ");
-  scanf("%d", &cpf);
+  fgets(cpf, 12, stdin);
 
   printf("Digite sua senha: ");
   scanf("%d", &senha);
 
-  printf("Seu CPF é: %d\n", cpf);
+  printf("Seu CPF é: %s\n", cpf);
   printf("Sua senha é: %d\n", senha);
 
   return 0;
